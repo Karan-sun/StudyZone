@@ -3,6 +3,8 @@ import pymysql
 
 app = Flask(__name__)
 
+print("hi")
+
 # Database connection
 def get_db_connection():
     return pymysql.connect(
