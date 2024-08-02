@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Program</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Loyalty Program</h1>
+    <form action="{{ url_for('loyalty') }}" method="POST">
+        <label for="student_id">Student ID:</label>
+        <input type="number" id="student_id" name="student_id"><br>
+        
+        <label for="points">Points:</label>
+        <input type="number" id="points" name="points"><br>
+        
+        <label for="rewards">Rewards:</label>
+        <input type="text" id="rewards" name="rewards"><br>
+        
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>

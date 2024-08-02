@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Space Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to Study Space Management</h1>
+    <p>This service helps cafes manage their space to accommodate students looking for study areas.</p>
+    <a href="{{ url_for('study_space') }}">Study Space Management</a><br>
+    <a href="{{ url_for('delivery') }}">Delivery and Takeaway Services</a><br>
+    <a href="{{ url_for('loyalty') }}">Loyalty Program</a>
+</body>
+</html>

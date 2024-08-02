@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Space Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Study Space Management</h1>
+    <form action="{{ url_for('study_space') }}" method="POST">
+        <label for="cafe_name">Cafe Name:</label>
+        <input type="text" id="cafe_name" name="cafe_name"><br>
+        
+        <label for="study_zone">Study Zone:</label>
+        <input type="text" id="study_zone" name="study_zone"><br>
+        
+        <label for="amenities">Amenities:</label>
+        <input type="text" id="amenities" name="amenities"><br>
+        
+        <label for="booking_time">Booking Time:</label>
+        <input type="datetime-local" id="booking_time" name="booking_time"><br>
+        
+        <label for="student_id">Student ID:</label>
+        <input type="number" id="student_id" name="student_id"><br>
+        
+        <input type="submit" value="Book">
+    </form>
+</body>
+</html>
